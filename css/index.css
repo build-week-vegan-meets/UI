@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  margin: 20px auto;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.navigation nav {
+  margin-top: 10px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+}
+.navigation nav a {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: grey;
+}
+@media (max-width: 500px) {
+  .navigation nav a {
+    padding: 5%;
+    margin-left: 0;
+  }
+}
+.container header h1 {
+  color: white;
+  background-image: url("../img/head.jpg");
+  padding: 200px;
+}
+.info h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  color: grey;
+  border-top: 5px solid #B5F7E3;
+}
+@media (max-width: 500px) {
+  .info h2 {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+.info p {
+  border-bottom: 5px solid #B5F7E3;
+  padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .info p {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+#vegan .item {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 5px solid #B5F7E3;
+}
+@media (max-width: 500px) {
+  #vegan .item {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+#vegan .item img {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 500px) {
+  #vegan .item img {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 7%;
+    width: 400px;
+    height: 400px;
+  }
+}
+#vegan .item h3 {
+  padding-top: 10%;
+  margin-right: 10%;
+  color: grey;
+}
+@media (max-width: 500px) {
+  #vegan .item h3 {
+    margin-left: 7%;
+    padding-top: 5%;
+  }
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact h2 {
+  font-size: 2rem;
+  color: grey;
+  text-align: center;
+  margin-top: 5%;
+}
+#contact .fields {
+  display: flex;
+  justify-content: center;
+}
+#contact .fields .field {
+  width: 100%;
+  margin-left: 11%;
+  margin-bottom: 5%;
+}
+#contact .message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .send-message {
+  margin-top: 5%;
+  margin-left: 35%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  /* Facebook */
+  /* Twitter */
+}
+footer .fa {
+  padding: 1%;
+  font-size: 2rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+footer .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+footer .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
