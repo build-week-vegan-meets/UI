@@ -142,11 +142,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #23293B;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -164,28 +164,42 @@ p {
   margin: 0 auto;
 }
 .navigation {
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
+.navigation h1 {
+  font-family: 'Poppins', sans-serif;
+  padding: 2%;
+}
+.navigation h1 span {
+  color: #52BA5D;
+}
 .navigation nav {
-  margin-top: 10px;
-  text-align: center;
+  background-color: #52BA5D;
+  padding: 2%;
+  width: 75%;
+  text-align: right;
 }
 @media (max-width: 500px) {
   .navigation nav {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
+    display: none;
   }
 }
 .navigation nav a {
   margin-left: 20px;
   font-size: 1.5rem;
+  text-align: center;
   text-decoration: none;
-  color: grey;
+  color: white;
+  border: 1px solid black;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1%;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .navigation nav a {
@@ -193,44 +207,62 @@ p {
     margin-left: 0;
   }
 }
-.container header h1 {
-  color: white;
-  background-image: url("../img/head.jpg");
-  padding: 200px;
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
-.info h2 {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-top: 5%;
-  color: grey;
-  border-top: 5px solid #B5F7E3;
+.container header {
+  display: flex;
+  justify-content: space-around;
+}
+.container header input[type=text] {
+  padding-right: 20%;
+  margin: 2%;
+  font-size: 1.7rem;
 }
 @media (max-width: 500px) {
-  .info h2 {
-    margin-right: 5%;
-    margin-left: 5%;
+  .container header input[type=text] {
+    display: none;
   }
 }
-.info p {
-  border-bottom: 5px solid #B5F7E3;
-  padding-bottom: 5%;
+.container header nav {
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+}
+.container header nav a {
+  margin: 2%;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1%;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
-  .info p {
-    margin-right: 5%;
-    margin-left: 5%;
+  .container header nav a {
+    padding: 5%;
+    margin-left: 0;
   }
 }
 #vegan .item {
   display: flex;
   justify-content: space-around;
-  border-bottom: 5px solid #B5F7E3;
+  align-content: center;
 }
 @media (max-width: 500px) {
   #vegan .item {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-left: 10%;
   }
 }
 #vegan .item img {
@@ -243,70 +275,54 @@ p {
   #vegan .item img {
     padding-top: 1%;
     padding-bottom: 1%;
-    margin-left: 7%;
-    width: 400px;
-    height: 400px;
+    margin: 7%;
   }
-}
-#vegan .item h3 {
-  padding-top: 10%;
-  margin-right: 10%;
-  color: grey;
 }
 @media (max-width: 500px) {
-  #vegan .item h3 {
-    margin-left: 7%;
-    padding-top: 5%;
+  #vegan .item .name {
+    margin-top: 0;
+    margin-left: 5%;
   }
 }
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 500px) {
+  #vegan .item .name .review {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
 }
-#contact h2 {
-  font-size: 2rem;
-  color: grey;
-  text-align: center;
+@media (max-width: 500px) {
+  #vegan .item .name .dollar {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+}
+#vegan .item .name .checked {
+  color: orange;
+}
+#vegan .item .name h3 {
+  margin-top: 35%;
+}
+@media (max-width: 500px) {
+  #vegan .item .name h3 {
+    margin-top: 0;
+    margin-left: 5%;
+  }
+}
+#vegan .item .address {
   margin-top: 5%;
 }
-#contact .fields {
-  display: flex;
-  justify-content: center;
+@media (max-width: 500px) {
+  #vegan .item .address {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
 }
-#contact .fields .field {
-  width: 100%;
-  margin-left: 11%;
-  margin-bottom: 5%;
-}
-#contact .message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#contact .send-message {
-  margin-top: 5%;
-  margin-left: 35%;
-}
-footer {
-  display: flex;
-  justify-content: center;
+#vegan .item .address h4 {
   padding: 5%;
-  /* Facebook */
-  /* Twitter */
 }
-footer .fa {
-  padding: 1%;
-  font-size: 2rem;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-footer .fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-footer .fa-twitter {
-  background: #55ACEE;
-  color: white;
+@media (max-width: 500px) {
+  #vegan .item .address h4 {
+    padding: 0;
+    margin-left: 5%;
+  }
 }

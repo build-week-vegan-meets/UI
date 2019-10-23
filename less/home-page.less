@@ -1,123 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .container {
     header {
-      h1 {
-          color: white;
-          background-image: url("../img/head.jpg");
-          padding: 200px;
-      }
+        display: flex;
+        justify-content: space-around;
+        input[type=text] {
+           padding-right: 20%;
+           margin: 2%;
+           font-size: 1.7rem;
+           @media @phone {
+               display: none;
+            }
+        }
+        nav {
+           width: 100%;
+           text-align: center;
+           padding-top: 2%;
+           a {
+               margin: 2%;
+              font-size: 1.3rem;              
+              text-align: center;
+              text-decoration: none;
+              color: black; 
+              border: 1px solid black;
+              padding-top: 1%;
+              padding-left: 3%;
+              padding-right: 3%;
+              padding-bottom: 1%;
+              border-radius: 5px;
+              @media @phone {
+                 padding: 5%;
+                 margin-left: 0;
+               }
+            }// 
+           
+        }
     }
 }
-.info {
-    h2 {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        padding-top: 5%;
-        color:grey;
-        border-top: 5px solid #B5F7E3;
-        @media @phone {
-         margin-right: 5%;
-         margin-left: 5%;
-      }
-    }
-    p {
-        border-bottom: 5px solid #B5F7E3;
-        padding-bottom: 5%;
-        @media @phone {
-         margin-right: 5%;
-         margin-left: 5%;
-      }
-    }
-}
-
 #vegan {
     .item {
       display: flex;
       justify-content: space-around;
-      border-bottom: 5px solid #B5F7E3;
+      align-content:center;
       @media @phone {
          flex-direction: column;
          justify-content: center;
          align-content: center;
+         margin-left: 10%;
       }
       img {
-          padding-top: 5%;
-          padding-bottom: 5%;
-          width:300px;
-          height:300px;
-          @media @phone {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            width:300px;
+            height:300px;
+            @media @phone {
               padding-top: 1%;
               padding-bottom: 1%;
-              margin-left: 7%;
-              width:400px;
-              height:400px;
+              margin: 7%;
           }
       }
-      h3 {
-          padding-top: 10%;
-          margin-right: 10%;
-          color: grey;
+      .name {
+            @media @phone {
+            margin-top: 0;
+            margin-left: 5%;
+            }
+           .review {
+               @media @phone {
+                  margin-top: 2%;
+                  margin-left: 5%;
+            }
+           }
+           .dollar {
+               @media @phone {
+            margin-top: 2%;
+            margin-left: 5%;
+            }
+           }
+          .checked {
+              color: orange;
+          }
+          h3 {
+              margin-top: 35%;
+              @media @phone {
+            margin-top: 0;
+            margin-left: 5%;
+            }
+
+          }
+      }
+      .address {
+          margin-top: 5%;
           @media @phone {
-              margin-left: 7%;
-              padding-top: 5%;
+             margin-top: 2%;
+             margin-left: 5%;
+          }
+          h4 {
+              padding: 5%;
+             @media @phone {
+                 padding: 0;
+                 margin-left: 5%;
+          }
+
           }
       }
     }
 }
 
-#contact {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-	h2 {
-      font-size: 2rem;
-      color:grey;
-	  text-align: center;
-	  margin-top: 5%;
-    }
 
-    .fields {
-	  display: flex;
-      justify-content: center;
-	  .field {
-		  width: 100%;
-		  margin-left: 11%;
-		  margin-bottom: 5%;
-	    }
-    }
-    .message {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-	}
-	
-	.send-message {
-		margin-top: 5%;
-		margin-left: 35%;
-	}
-}
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-
-  .fa {
-    padding: 1%;
-    font-size: 2rem;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  /* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-}

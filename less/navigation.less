@@ -1,22 +1,36 @@
 .navigation {
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px 0;
     width: 100%;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      padding: 2%;
+      span {
+        color: #52BA5D;
+      }
+    }
     nav {
-      margin-top: 10px;
-      text-align: center;
+      background-color: #52BA5D; 
+      padding: 2%;
+      width: 75%;
+      text-align: right;
       @media @phone {
-         display: flex;
-         flex-direction: column;
-         width: 75%;
+         display: none;
       }
       a {
         margin-left: 20px;
         font-size: 1.5rem;
+        text-align: center;
         text-decoration: none;
-        color: grey;
+        color: white; 
+        border: 1px solid black;
+        padding-top: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 1%;
+        border-radius: 5px;
         @media @phone {
           padding: 5%;
           margin-left: 0;
