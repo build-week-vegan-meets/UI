@@ -17,7 +17,9 @@
       width: 75%;
       text-align: right;
       @media @phone {
-         display: none;
+         background-color:white;
+         color: black; 
+         width: 40%;
       }
       a {
         margin-left: 20px;
@@ -34,7 +36,52 @@
         @media @phone {
           padding: 5%;
           margin-left: 0;
+          color: black;
         }
       }// this closes the links 
     }//this closes the nav
 }
+.nav-about {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      padding: 2%;
+      @media @phone {
+         margin-left: 15%;
+      }
+    }
+    nav {
+      background-color: #52BA5D; 
+      padding: 2%;
+      width: 70%;
+      text-align: right;
+      @media @phone {
+         background-color:white;
+         color: black; 
+         width: 30%;
+      }
+      a {
+        margin-left: 20px;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: white; 
+        border: 1px solid black;
+        padding-top: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 1%;
+        border-radius: 5px;
+        @media @phone {
+          padding: 5%;
+          margin-left: 0;
+          color: black; 
+        }
+      }// this closes the links 
+    }//this closes the nav
+}
+

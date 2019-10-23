@@ -185,7 +185,9 @@ p {
 }
 @media (max-width: 500px) {
   .navigation nav {
-    display: none;
+    background-color: white;
+    color: black;
+    width: 40%;
   }
 }
 .navigation nav a {
@@ -205,6 +207,56 @@ p {
   .navigation nav a {
     padding: 5%;
     margin-left: 0;
+    color: black;
+  }
+}
+.nav-about {
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-about h1 {
+  font-family: 'Poppins', sans-serif;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .nav-about h1 {
+    margin-left: 15%;
+  }
+}
+.nav-about nav {
+  background-color: #52BA5D;
+  padding: 2%;
+  width: 70%;
+  text-align: right;
+}
+@media (max-width: 500px) {
+  .nav-about nav {
+    background-color: white;
+    color: black;
+    width: 30%;
+  }
+}
+.nav-about nav a {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .nav-about nav a {
+    padding: 5%;
+    margin-left: 0;
+    color: black;
   }
 }
 @font-face {
@@ -325,4 +377,29 @@ p {
     padding: 0;
     margin-left: 5%;
   }
+}
+.container .mission {
+  background-image: url("../img/head.jpg");
+  height: 200px;
+  background-size: cover;
+}
+.container .mission h3 {
+  text-align: center;
+  margin: 2%;
+  color: white;
+}
+.container .mission h2 {
+  text-align: center;
+  margin: 2%;
+  color: white;
+}
+.container .team {
+  margin-top: 10%;
+}
+.container .team h2 {
+  margin: 2%;
+  border-bottom: 3px solid #52BA5D;
+}
+.container .team h3 {
+  margin: 2%;
 }
