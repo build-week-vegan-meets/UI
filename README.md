@@ -20,6 +20,5 @@
 
 ### Features
 - [ ] As a user, I can create and login to a new account
-- [ ] As a user, I can add a restaurant that has vegan options (include address, phone, hours of operation, and menu (menu is optional on this step)
-- [ ] As a user, I can view a page for each restaurant and I can rate it, and add an item (name, description, price) to the menu.
+- [ ] As a user, I can view a restaurant list that has vegan options (include address, phone, hours of operation, and menu (menu is optional on this step)
 - [ ] As a user, I can search for a restaurant in more than one way (name, zip, city, price range, etc. (If you have a UX designer depend on him/her for this.)
